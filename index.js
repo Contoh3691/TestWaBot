@@ -99,9 +99,9 @@ const { limit } = require('./database/menu/limit*/
 // Load Vcard Contact
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:Nazwa🖤\n' // full name
-            + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+1 (254) 212-3926\n' // WhatsApp ID + phone number
+            + 'FN:Itachi🇮🇩\n' // full name
+            + 'ORG:Owner Bot;Itachi🇮🇩\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=12542123926:+1 (201) 574-7827\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 prefix = '.'
 blocked = []
@@ -399,9 +399,9 @@ async function starts() {
         		const bisakah = ['Bisa','Tidak Bisa']
 		        const kapankah = ['Hari Lagi','Minggu Lagi','Bulan Lagi','Tahun Lagi']
 			const botNumber = client.user.jid
-			const ownerNumber = ["12542123926@s.whatsapp.net"] // replace this with your number
-			const nomorOwner = [ownerNumber]
-			const isGroup = from.endsWith('@g.us')
+			const ownerNumber = ["62895372698638@s.whatsapp.net"] // replace this with your number
+			const nomorOwner = [+1 (201) 574-7827]
+			const isGroup = from.endsWith('https://chat.whatsapp.com/GTmWU6nJio7HdoJz9hSt0m')
 			const totalchat = await client.chats.all()
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
